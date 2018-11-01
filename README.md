@@ -11,6 +11,10 @@ disadvantages, such as being harder to configure and being unable to expose
 process metrics (e.g., memory and CPU usage). Running the exporter as a Java
 Agent is thus strongly encouraged.
 
+## Why a VilledeMontreal Fork?
+
+We need the modifications outlined in [this PR from upstream](https://github.com/prometheus/jmx_exporter/pull/254) in order for the JMX_Exporter to work for our Kronos use case. From the PR's comments and the status of the PR (it's closed and hasn't been merged) we see that such modifications will not likely make it into upstream. So we will maintain our own version of the JMX_Exporter to meet our specific usecase.
+
 ## Running
 
 To run as a javaagent [download the jar](https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.3.1/jmx_prometheus_javaagent-0.3.1.jar) and run:
