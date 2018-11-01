@@ -1,3 +1,5 @@
+https://travis-ci.org/VilledeMontreal/jmx_exporter.svg?branch=master
+
 JMX Exporter
 =====
 
